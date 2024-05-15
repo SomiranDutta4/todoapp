@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/todo.css">
+</head>
+<body>
+    <div id="main">
+        <h1 style="margin: 1vh 0 1vh 0; width: 100vw;text-align: center;">TODO App</h1>
+        <form style="display: flex;flex-wrap: wrap;" method="post" action="/" id="add">
+        <div id="container1">
+    <div id="n1sub1">
+        <p style="width: 100vw; margin: 0%; height: 45%;text-align: center;">DESCRIPTION</p>
+        <input style="margin: 0%; height: 35%;" name="Description" type="text" placeholder="What do you need to do?">
+    </div>
+    <div id="n1sub2">
+    <div class="cat" id="category1">
+        <p>Category</p>
+        <select name="Category">
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="School">School</option>
+            <option value="Home">Home</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div class="cat">
+        <p>Due Date</p>
+        <input name="Date" type="date" placeholder="dd/mm/yyyy">
+    </div>
+    </div>
+</div>
+    <div id="container2">
+        <button style="background-color: rgb(12, 27, 51);" type="submit" class="twobuttons">
+            + ADD TASK
+        </button>
+    </div>
+    </form>
+
+    <form  style="width: 100vw;">
+    <div id="container3">
+        <button style="background-color: rgb(148, 49, 49);" class="twobuttons">
+            <img id="deleteicon" src="/deleteicon.png"> DELETE
+        </button>
+    </div>
+    </form>
+    <div id="container4">
+        <% for(let i in tasks){ %>
+            <div class="works" style="width: 100vw;">
+            <input type="checkbox">
+            <div style="width: 70%;" id="taskstodo">
+                <h1> <%= tasks[i].Description %> </h1>
+                <h2> <%= tasks[i].Date %> </h2>
+            </div>
+            <div style="text-align: center; width: 10%;color: rgb(236, 235, 235);" id="<%= tasks[i].Category %>">
+                <%= tasks[i].Category %>
+            </div>
+            </div>
+        <% } %>
+    </div>
+</div>
+</body>
+</html>

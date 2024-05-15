@@ -1,0 +1,22 @@
+body{padding: 0;margin: 0;}
+#main{display: flex;flex-wrap: wrap;}
+#container1{border: 0.1px solid black; height: 25vh;width: 100vw;}
+#n1sub1{display: flex;justify-content: center; height: 11.25vh;width: 100vw;align-items: center;flex-wrap: wrap;}
+#n1sub2{ height: 11.25vh;width: 100vw;display: flex;justify-content: space-evenly;flex-wrap: wrap;}
+.cat{height: 11.25vh;width: 45%;display: flex;justify-content: center;flex-wrap: wrap;}
+#container2{height: 7vh;width: 100vw;
+display: flex;justify-content:center;flex-wrap: wrap;}
+#container3{height: 7vh;width: 100vw;display: flex;justify-content: center;}
+.twobuttons{color: aliceblue; height: 6vh;width: 20vw;margin: 0 3% 0 3%;display: flex;justify-content: center;align-items: center;}
+#deleteicon{height: 80%;}
+p{width: 100%; margin: 0%; height: 45%;text-align: center;}
+#container4{border: 0.05px solid black; font-size: medium; 
+height: 50.2vh;overflow-y: scroll;
+display: flex;justify-content: space-between;flex-wrap: wrap;}
+.works{display: flex;justify-content: space-evenly;flex-wrap: wrap;align-items: center;}
+
+#Personal{background-color: orangered;}
+#Work{background-color: rgb(199, 91, 91);}
+#School{background-color: rgb(83, 90, 73);}
+#Home{background-color: rgb(67, 117, 117);}
+#Other{background-color: rgb(96, 35, 35)}
